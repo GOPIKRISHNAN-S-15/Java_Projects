@@ -1,0 +1,26 @@
+package Collections;
+import java.util.Scanner;
+import java.util.ArrayList;
+public class Arr_list_even{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        ArrayList<Integer> num=new ArrayList<>();
+        System.out.print("Enter Number of Values to be entered : ");
+        int n= sc.nextInt();
+        sc.nextLine();
+        for(int i=0;i<n;i++){
+            System.out.print("Enter Number "+(i+1)+" : ");
+            int g=sc.nextInt();
+            num.add(g);
+        }
+        System.out.println("Before removal : "+num);
+        System.out.print("After removal : ");
+        for(int i=0;i<n;i++){
+            if((num.get(i)%2) != 0){
+                System.out.print(+num.get(i)+" ");
+            }
+        }
+        
+        sc.close();
+    }
+}
