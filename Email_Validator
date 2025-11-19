@@ -1,0 +1,16 @@
+import java.util.*;
+public class Validate_email{
+    public static void main(String[] args){
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter a Email ID : ");
+        String s=sc.nextLine();
+        String regex = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9+_.-]+$";
+        if(s.matches(regex)){
+            System.out.println(s+ " is valid Mail ID");
+        }else{
+           System.out.println(s+ " is not a Mail ID"); 
+        }
+        sc.close();
+
+    }
+}
